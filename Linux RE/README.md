@@ -6,7 +6,7 @@ A full refresher for people who are stuck reversing applications off and on.  I 
 | --- | --- | --- |
 | 1 | `file ./[file]` | Determine file type. |
 | 2 | `strings ./[file]` | Print the sequences of printable characters in file. |
-| 3 |  `objdump -M intel intel-mnemonic -D ./[file]   ` | Disassemble and copy entire ELF binary into a file. |
+| 3 |  `objdump -M intel intel-mnemonic -D ./[file] >> ./objdump.txt` | Disassemble and copy entire ELF binary into a file. |
 | 4 | `strace ./[file]` | Trace system calls and signals |
 
 ----------------------------
