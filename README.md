@@ -7,7 +7,7 @@ Depending whether you are working with Windows or Linux binary, simply choose th
 | --- | --- | --- | --- |
 | 1 | `Hacking, The Art of Exploitation` | Best books for absolute newbies. Takes your step-by-step through the fundamentals.| Beginner |
 | 2 | `Practical Reverse Engineering` | Information is very well organized. Tons of code examples. | Beginner |
-| 3 | `Reversing, Secrets of Reverse Engin...` | Once you've master the basics.  Will help take you to the next level. | Intermediate |
+| 3 | `Reversing, Secrets of Reverse...` | Once you've master the basics.  Will help take you to the next level. | Intermediate |
 
 
 
