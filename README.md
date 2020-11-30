@@ -1,7 +1,7 @@
 # Reverse Engineering
 Depending whether you are working with Windows or Linux binary, simply choose the folder of the operating system you are dealing with.  What you'll typically find about the resources on my repositories is that they are categorized and organized by skill level.  Enyjoy!
 
-[Browse my GitHub](https://github.com/Kennyslaboratory?tab=repositories)for even more awesome hacking resources!
+[Browse my GitHub](https://github.com/Kennyslaboratory?tab=repositories) for even more awesome hacking resources!
 
 ------------------
 
