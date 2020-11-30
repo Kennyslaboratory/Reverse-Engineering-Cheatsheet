@@ -13,7 +13,7 @@ Depending whether you are working with Windows or Linux binary, simply choose th
 | 3 | [Reversing, Secrets of Reverse Engineering](https://www.amazon.com/Reversing-Secrets-Engineering-Eldad-Eilam/dp/0764574817) | Once you've master the basics.  Will help take you to the next level. | Intermediate |
 
 
-## Best Videos _(free)_
+## Best Video Tutorials
 | # | Title | Description | Skill Level |
 | --- | --- | --- | --- |
 | 1 | [Reverse Engineering Basics](https://www.youtube.com/watch?v=a2EkORFcSZo) | Start here if you know nothing. Take plenty of notes. | Beginner |
