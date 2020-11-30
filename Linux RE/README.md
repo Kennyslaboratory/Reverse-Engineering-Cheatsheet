@@ -1,5 +1,5 @@
 # Linux Reverse Engineering
-A full refresher for people who are stuck reversing applications off and on.  I only posted the most popular tips and tricks, so that you can quickly look at that's here and continue working.
+A full refresher for people who are stuck reversing applications off and on.  I only posted the most popular tips and tricks, so that you can quickly look at what's here and continue working.
 
 ## Disabling Linux Protections
 | Protection | Command | Description |
@@ -12,7 +12,11 @@ A full refresher for people who are stuck reversing applications off and on.  I 
 ## Linux Debuggers
 | Name | Description |
 | --- | --- |
-| gdb | GNU Debugger.  Linux's default binary debugger. |
+| [gdb](https://www.tutorialspoint.com/gnu_debugger/installing_gdb.htm) | GNU Debugger.  Linux's default binary debugger. |
+| [gdb-peda](https://github.com/longld/peda) | A must-have extension to GDB |
+| [Radare2](https://rada.re/n/radare2.html) | Reverse Engineering Framework.  One of my personal favorites.|
+| [Radare2 Cutter](https://rada.re/n/cutter.html) | Radare2 GUI interface. |
+| [Hopper Disassembler](https://www.hopperapp.com/) | Great GUI. Works with MacOS and Linux. |
 
 ----------------------------
 
