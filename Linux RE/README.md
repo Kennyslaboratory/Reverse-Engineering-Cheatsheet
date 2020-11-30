@@ -1,11 +1,13 @@
 # Linux Reverse Engineering
 A full refresher for people who are stuck reversing applications off and on.  I only posted the most popular tips and tricks, so that you can quickly look at what's here and continue working.
 
-## Disabling Linux Protections
-| Protection | Command | Description |
+## Linux Reversing Checklist
+| # | Command | Description |
 | --- | --- | --- |
-| Disable Canaries | `gcc -g overflow.c -o overflow -fno-stack-protector` | Disable stack canaries when compiling. |
-| Disable ASLR | `sudo bash -c 'echo 0 > /proc/sys/kernel/randomize_va_space'` | Disables the system's ASLR protections. |
+| 1 | `file ./[file]` | Determine file type. |
+| 2 | `strings ./[file]` | Print the sequences of printable characters in file. |
+| 3 |  `objdump -M intel intel-mnemonic -D ./[file]   ` | Disassemble and copy entire ELF binary into a file. |
+| 4 | `strace ./[file]` | Trace system calls and signals |
 
 ----------------------------
 
@@ -20,10 +22,8 @@ A full refresher for people who are stuck reversing applications off and on.  I 
 
 ----------------------------
 
-## Linux Reversing Checklist
-| # | Command | Description |
+## Disabling Linux Protections
+| Protection | Command | Description |
 | --- | --- | --- |
-| 1 | `file ./[file]` | Determine file type. |
-| 2 | `strings ./[file]` | Print the sequences of printable characters in file. |
-| 3 |  `objdump -M intel intel-mnemonic -D ./[file]   ` | Disassemble and copy entire ELF binary into a file. |
-| 4 | `strace ./[file]` | Trace system calls and signals |
+| Disable Canaries | `gcc -g overflow.c -o overflow -fno-stack-protector` | Disable stack canaries when compiling. |
+| Disable ASLR | `sudo bash -c 'echo 0 > /proc/sys/kernel/randomize_va_space'` | Disables the system's ASLR protections. |
