@@ -8,6 +8,11 @@
 | Strings | Strings are pointers to character arrays.  Strings point to the beginning of an array/buffer in memory to be read by a function like scanf(). |
 | Typecasting | C/C++ is a Strongly Typed Language.  You need to use Typecasting to change the type of a variable or pointer.  Despite how the type was originally defined. |
 | Vectors | Vectors are similar to arrays expect that they are used to store Object References instead of values with primative data types. |
+| File Descriptors | A number that is used to refernece an open file. |
+| Streams | The interface we use for reading and writing data to files, sockets, stdout, etc. |
+| Structs (C) | Structs in C are variables that contain multiple other variables. |
+| Classes | Class is short for _Classify._ A class is a blueprint for creating objects during runtime. Objects are dynamic and only spawn during runtime. |
+| Structs (C++) | Structs in C++ are the same as Classes except they are by default set to Public. |
 
 ## Primitive Data Types
 | Subject | Description |
