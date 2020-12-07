@@ -29,7 +29,7 @@
 
 ## Common Memory Bugs
 | Bug | Description |
-| --- | --- |
+| ------ | --- |
 | Buffer Overflow | Writing past the bounds of a buffer.  For example, writing to a buffer without an null byte (\x00) appended at the end, therefore the program doesn't know when to stop a user's input from writing to memory. |
  Dangling Pointers | When a pointer is pointing to an area of memeory that has already been freed.  Also known as, [Use-After-Free](http://phrack.org/issues/57/9.html). |
 | Off-By-One Error | ... |
