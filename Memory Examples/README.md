@@ -19,8 +19,8 @@
 ## Endiannessness and Byte Ordering
 | # | Subject | Description |
 | --- | --- | --- |
-| 1 | Big Endian | Bytes in there normal order. "Most significant byte first" ... 0x12345678 = \x12\x34\x56\x78 |
-| 2 | Little Endian | Bytes in there reverse order. Least significant byte first" ... 0x12345678 = \x78\x56\x34\x12 |
+| 1 | Big Endian | Bytes in there normal order. _"Most significant byte first"_  0x12345678 = \x12\x34\x56\x78 |
+| 2 | Little Endian | Bytes in there reverse order. _"Least significant byte first"_  0x12345678 = \x78\x56\x34\x12 |
 
 ## Common Memory Bugs
 | # | Bug | Description |
