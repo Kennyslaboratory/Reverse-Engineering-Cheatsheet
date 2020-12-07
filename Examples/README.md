@@ -12,8 +12,8 @@
 ## Primitive Data Types
 | # | Subject | Description |
 | --- | --- | --- |
-| 1 | Signed Int | Stores a whole number. Numbers in C are defaultly signed. Meaning, they can be either positive or negative. 32-bit signed integers max out at 2,147,483,647.
-| 2 | Unsigned Int | Stores a whole Number. Numbers that are unsigned can only be positive.  This means there is no [Twos Compliment](https://www.youtube.com/watch?v=lKTsv6iVxV4) and the least significant bit is not reserved. 32-bit unsigned integers max out at 4,294,967,295.
+| 1 | Signed Int | Stores a whole number. Numbers in C are defaultly signed. Meaning, they can be either positive or negative numbers. 32-bit signed integers max out at 2,147,483,647.
+| 2 | Unsigned Int | Stores a whole number. Numbers that are unsigned can only be positive.  This means there is no [Twos Compliment](https://www.youtube.com/watch?v=lKTsv6iVxV4) and the least significant bit is not reserved. 32-bit unsigned integers max out at 4,294,967,295.
 | 3 | Long | Store a whole number.  A long is bouble the memory size of an int, 8-bytes in 32-bit machines.  Used when an Int isn't big enough to store a value. |
 | 4 | Short | Store a whole number.  A short is half the size of an Int. 2-Bytes in 32-bit machines. |
 | 5 | Float | Stores numbers with decimal points.  4-Bytes in size on 32-Bit machines.  Used for values with 6 to 7 decimals. |
