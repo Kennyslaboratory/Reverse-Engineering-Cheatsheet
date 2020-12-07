@@ -11,7 +11,7 @@
 | File Descriptors | A number that is used to refernece an open file. |
 | Streams | The interface we use for reading and writing data to files, sockets, stdout, etc. |
 | Structs (C) | Structs in C are variables that contain multiple other variables. |
-| Classes | Class is short for _Classify._ A class is a blueprint for creating objects during runtime. Objects are dynamic and only spawn during runtime. Classes and Object Oriented Programmer were added in C++. |
+| Classes | Class is short for _Classify._ A class is a blueprint for creating objects during runtime. Objects are dynamic and only spawn during runtime. Classes and Object Oriented Programming _(OOP)_ were added in C++. |
 | Structs(C++) | Structs in C++ are the same as Classes except they are by default set to Public. |
 
 ## Primitive Data Types
