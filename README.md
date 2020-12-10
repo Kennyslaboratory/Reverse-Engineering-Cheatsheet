@@ -23,7 +23,7 @@ Depending whether you are working with Windows or Linux binary, simply choose th
 | # | Title | Description | Skill Level |
 | --- | --- | --- | --- |
 | 1 | [Protostar Challenges](https://exploit-exercises.lains.space/protostar/stack0/) | Watch the challenge walkthroughs created by [Live Overflow](https://old.liveoverflow.com/binary_hacking/protostar/stack0.html) | Beginner |
-
+| 2 | [Pico CTFs](https://play.picoctf.org/practice?category=3&page=1) | Various CTFs designed by Google, including reverse engineering challenges. | Beginner |
 
 
 
