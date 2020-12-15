@@ -39,7 +39,8 @@ Depending whether you are working with Windows or Linux binary, simply choose th
 
 -----------------
 # The Big Picture
-**`DON'T TRY TO MEMORIZE EVERYTHING!!!`** As you learn, you will be tempted to memorize a lot of things at once and overwhelm yourself.  Don't waste your valuable time and energy trying to memorize everything.  Focus on memorizing the techniques and strategies used to enumerate memory and attack vectors.  If you forget what a few things are, you can refer to this page for reminders.
+**`DON'T TRY TO MEMORIZE EVERYTHING!!!`**
+Just focus on memorizing the techniques used to analyze, debug, and examine memory.  I've created this github as a place for students to get a fast overview of Reverse Engineering and leave you with a bird's eye view of it.
 
 ## Important Coding Concepts
 | Subject | Description |
