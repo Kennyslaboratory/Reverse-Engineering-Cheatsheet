@@ -29,17 +29,17 @@ Depending whether you are working with Windows or Linux binary, simply choose th
 # List of Memory Bugs
 | Bug | Description |
 | --- | --- |
-| [Buffer_Overflow] | Writing past the bounds of a buffer.  For example, writing to a buffer without an null byte (\x00) appended at the end, therefore the program doesn't know when to stop writing user input to memory. |
- [Dangling_Pointers] | When a pointer is pointing to an area of memeory that has already been freed.  Also known as, [Use-After-Free](http://phrack.org/issues/57/9.html). |
+| [Buffer_Overflow]() | Writing past the bounds of a buffer.  For example, writing to a buffer without an null byte (\x00) appended at the end, therefore the program doesn't know when to stop writing user input to memory. |
+ [Dangling_Pointers]() | When a pointer is pointing to an area of memeory that has already been freed.  Also known as, [Use-After-Free](http://phrack.org/issues/57/9.html). |
 | [Off-By-One_Error]() | Found in loops that append data to a buffer.  Not checking the last iteration of the loop can overwrite the least signifcant byte on the function's base pointer. |
 | [Race_Condition]() | When threads are in use.  If two or more threads can access shared data and try to change it at the same time.  |
 | [Format_String_Attack]() | If a function like printf() is used to print input from a user and a format string is not specified. |
 | [Integer_Overflow]() | Integers have a maximum value in memory.  A signed int can only go as high as 2,147,483,647 for example.  Math that goes beyond that limit can overflow the integer, resuting in unexpected behavior. |
-| [Weak_EncryptioN]() | Using weak Pseudo-random seeds, for example using time() to provide a cryptographical seed for encryption or rand() function.. |
+| [Weak_Encryption]() | Using weak Pseudo-random seeds, for example using time() to provide a cryptographical seed for encryption or rand() function.. |
 
 -----------------
 # The Big Picture
-**DO NOT TRY TO MEMORIZE EVERYTHING**.As you learn, you will be tempted to memorize a lot of things at once and overwhelm yourself.  Don't waste your valuable time and energy trying to memorize everything.  Focus on memorizing the techniques and strategies used to enumerate memory and attack vectors.  If you forget what a few things are, you can refer to this page for reminders.
+**`DON'T TRY TO MEMORIZE EVERYTHING!!!`** As you learn, you will be tempted to memorize a lot of things at once and overwhelm yourself.  Don't waste your valuable time and energy trying to memorize everything.  Focus on memorizing the techniques and strategies used to enumerate memory and attack vectors.  If you forget what a few things are, you can refer to this page for reminders.
 
 ## Important Coding Concepts
 | Subject | Description |
