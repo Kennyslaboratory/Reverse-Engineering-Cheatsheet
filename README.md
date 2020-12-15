@@ -59,14 +59,14 @@ Just focus on truely memorizing the techniques used to analyze, debug, and exami
 ## Primitive Data Types
 | Subject | Description | Size |
 | --- | --- | --- |
-| [Signed_Int]() | Stores a whole number. Numbers in C are defaultly signed. Meaning, they can be either positive or negative numbers. 32-bit signed integers max out at 2,147,483,647. | 4 Bytes |
-| [Unsigned_Int]() | Stores a whole number. Numbers that are unsigned can only be positive.  This means there is no [Twos Compliment](https://www.youtube.com/watch?v=lKTsv6iVxV4) and the least significant bit is not reserved. 32-bit unsigned integers max out at 4,294,967,295. | 4 Bytes |
-| [Long]() | Store a whole number.  A long is double the memory size of an int, 8-bytes in 32-bit machines.  Used when an Int isn't big enough to store a value. | | 8 Bytes |
-| [Short]() | Store a whole number.  A short is half the size of an Int. 2-Bytes in 32-bit machines or simply 16-Bits in size. | 2 Bytes |
-| [Float]() | Stores numbers with decimal points.  4-Bytes in size on 32-Bit machines.  Used for values with 6 to 7 decimals. | 4 Bytes |
-| [Double]() | Stores numbers with decimal points. 8-Bytes in size on 32-Bit machines.  Used for values with up to 15 decimals. | 8 Bytes |
-| [Char]() | 2 Bytes in size.  Chars are used to contain letters such as ASCII values. Strings are considered char arrays. | 2 Bytes |
-| [Boolean]() | Either a True or False.  1-Bit in size. | 1 bit |
+| [Signed_Int]() | Stores a whole number. Numbers in C are defaultly signed. Meaning, they can be either positive or negative numbers. 32-bit signed integers max out at 2,147,483,647. | 4B |
+| [Unsigned_Int]() | Stores a whole number. Numbers that are unsigned can only be positive.  This means there is no [Twos Compliment](https://www.youtube.com/watch?v=lKTsv6iVxV4) and the least significant bit is not reserved. 32-bit unsigned integers max out at 4,294,967,295. | 4B |
+| [Long]() | Store a whole number.  A long is double the memory size of an int, 8-bytes in 32-bit machines.  Used when an Int isn't big enough to store a value. | 8B |
+| [Short]() | Store a whole number.  A short is half the size of an Int. 2-Bytes in 32-bit machines or simply 16-Bits in size. | 2B |
+| [Float]() | Stores numbers with decimal points.  4-Bytes in size on 32-Bit machines.  Used for values with 6 to 7 decimals. | 4B |
+| [Double]() | Stores numbers with decimal points. 8-Bytes in size on 32-Bit machines.  Used for values with up to 15 decimals. | 8B |
+| [Char]() | 2 Bytes in size.  Chars are used to contain letters such as ASCII values. Strings are considered char arrays. | 2B |
+| [Boolean]() | Either a True or False.  1-Bit in size. | 1bit |
 
 ## Endianness and Byte Ordering
 | Subject | Description |
