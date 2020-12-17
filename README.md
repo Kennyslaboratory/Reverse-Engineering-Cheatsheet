@@ -38,9 +38,9 @@ Depending whether you are working with Windows or Linux binary, simply choose th
 | [Weak_Encryption]() | Using weak Pseudo-random seeds, for example using time() to provide a cryptographical seed for encryption or rand() function.. |
 
 -----------------
-# The Big Picture
+# The Reverse Engineer's Cheatsheet
 **`DON'T TRY TO MEMORIZE EVERYTHING!!!`**
-Just focus on truely memorizing the techniques used to analyze, debug, and examine memory.  I've created this Github as a place for students to get a fast overview of Reverse Engineering and leave you with a bird's eye view of it.
+Just focus on truely memorizing the techniques used to analyze, debug, and examine memory.  This is a high level overview of key concepts that you might need to refresh yourself on if you've been out of the game for a while.
 
 ## Important Coding Concepts
 | Subject | Description |
