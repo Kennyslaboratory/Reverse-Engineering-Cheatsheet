@@ -42,7 +42,10 @@ Depending whether you are working with Windows or Linux binary, simply choose th
 **`DON'T TRY TO MEMORIZE EVERYTHING!!!`**
 Just focus on truely memorizing the techniques used to analyze, debug, and examine memory.  This is a high level overview of key concepts that you might need to refresh yourself on if you've been out of the game for a while.
 
-## Important Coding Concepts
+## Table of Contents
+ * [Programming Concepts](#programming-concepts)
+
+## Programming Concepts
 | Subject | Description |
 | --- | --- |
 | [Arrays]() | Arrays and buffers are the same thing.  They point to [adjacent](https://www.merriam-webster.com/dictionary/adjacent) data streams located in memory and end with a NULL byte. (\x00). |
