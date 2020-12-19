@@ -3,6 +3,16 @@ Depending whether you are working with Windows or Linux binary, simply choose th
 
 [Browse my GitHub](https://github.com/Kennyslaboratory?tab=repositories) for even more awesome hacking resources!
 
+## Table of Contents
+ * [Book Recommendations](#best-books)
+ * [Video Recommendations](#best-video-tutorials)
+ * [Best CTF Challenges](#best-challenges)
+ * [Type of Memory Bugs](#list-of-memory-bugs)
+ * [Reverse Engineering Cheatsheet](#the-reverse-engineering-cheatsheet)
+   * [Programming Concepts](#programming-concepts)
+   * [Primitive Data Types](#primitive-data-types)
+   * [Endianness](#endianness)
+
 ------------------
 
 ## Best Books
@@ -38,13 +48,8 @@ Depending whether you are working with Windows or Linux binary, simply choose th
 | [Weak_Encryption]() | Using weak Pseudo-random seeds, for example using time() to provide a cryptographical seed for encryption or rand() function.. |
 
 -----------------
-# The Reverse Engineer's Cheatsheet
+# The Reverse Engineering Cheatsheet
 Memorizing is never fun and if you're like me, you'll work on other projects for months before needing to come back to debug a piece of software just to find out that you've lost your mojo.  Here are a few refreshers if you need them.
-
-## Table of Contents
- * [Programming Concepts](#programming-concepts)
- * [Primitive Data Types](#primitive-data-types)
- * [Endianness](#endianness)
  
 ## Programming Concepts
 | Subject | Description |
