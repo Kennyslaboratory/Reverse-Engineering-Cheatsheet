@@ -8,7 +8,7 @@ Depending whether you are working with Windows or Linux binary, simply choose th
  * [Video Recommendations](#best-video-tutorials)
  * [Best CTF Challenges](#best-challenges)
  * [Type of Memory Bugs](#list-of-memory-bugs)
- * [Reverse Engineering Cheatsheet](#the-reverse-engineering-cheatsheet)
+ * **[Reverse Engineering Cheatsheet](#the-reverse-engineering-cheatsheet)**
    * [Programming Concepts](#programming-concepts)
    * [Primitive Data Types](#primitive-data-types)
    * [Endianness](#endianness)
