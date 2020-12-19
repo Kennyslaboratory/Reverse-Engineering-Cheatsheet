@@ -43,7 +43,9 @@ Memorizing is never fun and if you're like me, you'll work on other projects for
 
 ## Table of Contents
  * [Programming Concepts](#programming-concepts)
-
+ * [Primitive Data Types](#primitive-data-types)
+ * [Endianness](#endianness)
+ 
 ## Programming Concepts
 | Subject | Description |
 | --- | --- |
@@ -70,7 +72,7 @@ Memorizing is never fun and if you're like me, you'll work on other projects for
 | [Char]() | 2 Bytes in size.  Chars are used to contain letters such as ASCII values. Strings are considered char arrays. | 2 |
 | [Boolean]() | Either a True or False.  1-Bit in size. | 1-bit |
 
-## Endianness and Byte Ordering
+## Endianness
 | Subject | Description |
 | --- | --- |
 | [Big Endian]() | Bytes in there normal order. _"Most significant byte first"_  0x12345678 = \x12\x34\x56\x78 |
