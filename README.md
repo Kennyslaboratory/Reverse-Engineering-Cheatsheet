@@ -39,8 +39,7 @@ Depending whether you are working with Windows or Linux binary, simply choose th
 
 -----------------
 # The Reverse Engineer's Cheatsheet
-**`DON'T TRY TO MEMORIZE EVERYTHING!!!`**
-Just focus on truely memorizing the techniques used to analyze, debug, and examine memory.  This is a high level overview of key concepts that you might need to refresh yourself on if you've been out of the game for a while.
+Memorizing is never fun and if you're like me, you'll work on other projects for months before needing to come back to debug a piece of software just to find out that you've lost your mojo.  Here are a few refreshers if you need them.
 
 ## Table of Contents
  * [Programming Concepts](#programming-concepts)
