@@ -27,3 +27,7 @@ A full refresher for people who are stuck reversing applications off and on.  I 
 | --- | --- | --- |
 | Disable Canaries | `gcc -g overflow.c -o overflow -fno-stack-protector` | Disable stack canaries when compiling. |
 | Disable ASLR | `sudo bash -c 'echo 0 > /proc/sys/kernel/randomize_va_space'` | Disables the system's ASLR protections. |
+
+## GDB Commands [to-do]
+
+... ... ...
