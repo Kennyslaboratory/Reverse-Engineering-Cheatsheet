@@ -1,8 +1,9 @@
 # Resources Referenced
 | # | Resource |
 | --- | --- |
-| 1 | https://www.apriorit.com/dev-blog/160-apihooks |
-| 2 | https://www.foo.be/cours/dess-20122013/b/Eldad_Eilam-Reversing__Secrets_of_Reverse_Engineering-Wiley(2005).pdf |
+| 1 | [Apriorit](https://www.apriorit.com/dev-blog/160-apihooks) |
+| 2 | [Secrets_of_Reverse_Engineering](https://www.foo.be/cours/dess-20122013/b/Eldad_Eilam-Reversing__Secrets_of_Reverse_Engineering-Wiley(2005).pdf) |
+| 3 | [Open Security Blog](http://blog.opensecurityresearch.com/2013/01/windows-dll-injection-basics.html) |
 
 # Windows Reverse Engineering
 Windows applications make calls to the Windows API in order function.  To my knowledge, all Windows APIs are called and processed internally, even if the application is using .NET or the C++ library, Microsoft Foundation Class Library (MFC).  The API is being used in some way, therefore, it is in our best interest to do `API Hooking`.  
@@ -33,5 +34,12 @@ API hooking is a technique by which we can instrument and modify the behavior an
 
 ### DLL Injection - (Creating a Fake DLL)
 The method of hooking the API through a DLL, also called, "DLL Injection".  For example, we can create a fake DLL that has exactly the same export function as `kernel32.dll` and has exactly the same behavior, and make the .exe file recognize the DLL as if it were a real `kernel32.dll`.
+
+**4 Steps of DDL Injection**
+  - Attach to the process
+  - Allocate Memory within the process
+  - Copy the DLL or the DLL Path into the processes memory and determine appropriate memory addresses
+  - Instruct the process to Execute your DLL
+
 
 ... *[to be continued]* ...
