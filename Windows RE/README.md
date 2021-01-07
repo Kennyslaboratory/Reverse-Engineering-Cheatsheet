@@ -6,12 +6,12 @@ If you’re going to be doing serious reversing of Windows applications, it is g
 ## Windows API Main Components
 | Component | Description | Mode |
 | --- | --- | --- |
-| Kernel32.dll | Base API Client Component. Non-GUI-related services, such as file I/O, memory management, object management, process and thread management. | User-Mode |
-| Ntdll.dll | Native API Interface. Supports any number of application-level subsystems. | User-Mode |
-| User32.dll | The User API Client Component. Includes functionality for window management, message passing, input processing and standard controls. | User-Mode |
-| GDI32.dll | Graphics Device Interface (GDI) API Client Component. Exports functions that perform primitive drawing functions. | User-Mode |
-| WIN32K.sys | The Win32 Kernel Implementation.  Informally WinAPI, is Microsoft's core set of application programming interfaces (APIs) | Kernel-Mode |
-| NTOSKRNL.exe | The Windows Kernel. Responsible for various system services such as hardware abstraction, process and memory management, thus making it a fundamental part of the system. | Kernel-Mode |
+| [Kernel32.dll](https://en.wikipedia.org/wiki/Microsoft_Windows_library_files#KERNEL32.DLL) | Base API Client Component. Non-GUI-related services, such as file I/O, memory management, object management, process and thread management. | User-Mode |
+| [Ntdll.dll](https://en.wikipedia.org/wiki/Microsoft_Windows_library_files#NTDLL.DLL) | Native API Interface. Supports any number of application-level subsystems. | User-Mode |
+| [User32.dll](https://en.wikipedia.org/wiki/Microsoft_Windows_library_files#USER32.DLL) | The User API Client Component. Includes functionality for window management, message passing, input processing and standard controls. | User-Mode |
+| [GDI32.dll](https://en.wikipedia.org/wiki/Microsoft_Windows_library_files#GDI32.DLL) | Graphics Device Interface (GDI) API Client Component. Exports functions that perform primitive drawing functions. | User-Mode |
+| [WIN32K.sys](https://en.wikipedia.org/wiki/Windows_API) | The Win32 Kernel Implementation.  Informally WinAPI, is Microsoft's core set of application programming interfaces (APIs) | Kernel-Mode |
+| [NTOSKRNL.exe](https://en.wikipedia.org/wiki/Ntoskrnl.exe) | The Windows Kernel. Responsible for various system services such as hardware abstraction, process and memory management, thus making it a fundamental part of the system. | Kernel-Mode |
 
 
 ## API Hooking
