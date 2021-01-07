@@ -5,7 +5,9 @@
 | 2 | https://www.foo.be/cours/dess-20122013/b/Eldad_Eilam-Reversing__Secrets_of_Reverse_Engineering-Wiley(2005).pdf |
 
 # Windows Reverse Engineering
-Windows applications make calls to the Windows API in order function.  To my knowledge, all Windows APIs are called and processed internally, even if the application is using .NET or the C++ library, Microsoft Foundation Class Library (MFC).  The API is being used in some way, therefore, it is in out best interest to do `API Hooking`.  These days, Microsoft is promoting the use of the .NET Framework for developing Windows applications. The .NET Framework uses the `System` class for accessing the Win32 API.
+Windows applications make calls to the Windows API in order function.  To my knowledge, all Windows APIs are called and processed internally, even if the application is using .NET or the C++ library, Microsoft Foundation Class Library (MFC).  The API is being used in some way, therefore, it is in our best interest to do `API Hooking`.  
+
+These days, Microsoft is promoting the use of the .NET Framework for developing Windows applications. The .NET Framework uses the `System` class for accessing the Win32 API.
 
 If you’re going to be doing serious reversing of Windows applications, it is going to be important for you to understand the Win32 API because no matter which high-level interface an application employs (if any), it is eventually going to use the Win32 API for communicating with the OS
 
