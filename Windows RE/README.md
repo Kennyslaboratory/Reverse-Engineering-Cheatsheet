@@ -50,10 +50,10 @@ The method of hooking the API through a DLL, also called, "DLL Injection".  For 
 ## Useful Windows API Functions - (DLL Injection)
 | Function | Description |
 | --- | --- |
-| LoadLibraryA() | Automatically load a library.  Easy to use but very easy to block and detect. |
-| GetProcAddress() | Retrieves the address of an exported function or variable from the specified dynamic-link library (DLL). |
-| CreateToolhelp32Snapshot() | Takes a snapshot of the specified processes, as well as the heaps, modules, and threads used by these processes. |
-| OpenProcess() | Opens an existing local process object. |
+| [LoadLibraryA()](https://docs.microsoft.com/en-us/windows/win32/api/libloaderapi/nf-libloaderapi-loadlibrarya) | Automatically load a library.  Easy to use but very easy to block and detect. |
+| [GetProcAddress()](https://docs.microsoft.com/en-us/windows/win32/api/libloaderapi/nf-libloaderapi-getprocaddress) | Retrieves the address of an exported function or variable from the specified dynamic-link library (DLL). |
+| [CreateToolhelp32Snapshot()](https://docs.microsoft.com/en-us/windows/win32/api/tlhelp32/nf-tlhelp32-createtoolhelp32snapshot) | Takes a snapshot of the specified processes, as well as the heaps, modules, and threads used by these processes. |
+| [OpenProcess()](https://docs.microsoft.com/en-us/windows/win32/api/processthreadsapi/nf-processthreadsapi-openprocess) | Opens an existing local process object. |
 
 ## LoadLibraryA()
 `LoadLibraryA()` is a `kernel32.dll` function used to load DLLs, executables, and other supporting libraries at run time.  It's super easy and allows you to get your DLL injected without manual mapping.  The down side is that using this function is really easy to detect and stop because it registers the loaded DLL with the program.
