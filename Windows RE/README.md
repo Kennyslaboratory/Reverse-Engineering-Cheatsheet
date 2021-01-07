@@ -16,7 +16,7 @@ Windows applications make calls to the Windows API in order function.  To my kno
 
 By the way, these days Microsoft is promoting the use of the .NET Framework for developing Windows applications. The .NET Framework uses the `System` class for accessing the Win32 API and is higher-level than MFC / C++.
 
-If you’re going to be doing serious reversing of Windows applications, it is going to be important for you to understand the Win32 API because no matter which high-level interface an application employs (if any), it is eventually going to use the Win32 API for communicating with the OS
+If you’re going to be doing serious reversing of Windows applications, it is going to be important for you to understand the [Win32 API](https://docs.microsoft.com/en-us/windows/win32/apiindex/windows-api-list) because no matter which high-level interface an application employs (if any), it is eventually going to use the Win32 API for communicating with the OS
 
 ## Windows API Main Components
 | Component | Description | Mode |
