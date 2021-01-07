@@ -15,9 +15,9 @@ If you’re going to be doing serious reversing of Windows applications, it is g
 
 
 ## API Hooking
-API hooking is a technique by which we can instrument and modify the behavior and flow of API calls. Hooking can be used to introspect calls in a Windows application or can be used to capture some information related to the API Calls.  It will help that you understand DLL Logic and System Calls beforehand.
+API hooking is a technique by which we can instrument and modify the behavior and flow of API calls. API Hooking can be used to intercept calls in a Windows application or can be used to capture some information related to the API Calls.  It will help that you understand DLL Logic and System Calls beforehand.
 
-### DLL-mediated API hook  - (Creating a Fake DLL)
-The method of hooking the API through the DLL, also called, "DLL Injection".  For example, create a fake DLL that has exactly the same export function as `kernel32.dll` and has exactly the same behavior, and make the exe file recognize the DLL as if it were a real `kernel32.dll`.
+### DLL Injection - (Creating a Fake DLL)
+The method of hooking the API through the DLL, also called, "DLL Injection".  For example, we can create a fake DLL that has exactly the same export function as `kernel32.dll` and has exactly the same behavior, and make the .exe file recognize the DLL as if it were a real `kernel32.dll`.
 
 ... *[to be continued]* ...
