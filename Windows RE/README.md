@@ -1,3 +1,9 @@
+# Resources Referenced
+| # | Resource |
+| --- | --- |
+| 1 | https://www.apriorit.com/dev-blog/160-apihooks |
+| 2 | https://www.foo.be/cours/dess-20122013/b/Eldad_Eilam-Reversing__Secrets_of_Reverse_Engineering-Wiley(2005).pdf |
+
 # Windows Reverse Engineering
 Windows applications make calls to the Windows API in order function.  To my knowledge, all Windows APIs are called and processed internally, even if the application is using .NET or the C++ library, Microsoft Foundation Class Library (MFC).  The API is being used in some way, therefore, it is in out best interest to do `API Hooking`.  These days, Microsoft is promoting the use of the .NET Framework for developing Windows applications. The .NET Framework uses the `System` class for accessing the Win32 API.
 
@@ -16,6 +22,12 @@ If you’re going to be doing serious reversing of Windows applications, it is g
 
 ## API Hooking
 API hooking is a technique by which we can instrument and modify the behavior and flow of API calls. API Hooking can be used to intercept calls in a Windows application or can be used to capture some information related to the API Calls.  It will help that you understand DLL Logic and System Calls beforehand.
+
+### Hook Types
+| Type | Description |
+| --- | --- |
+| Local Hooks | These influence only specific applications. |
+| Global hooks | These affect all system processes.It was originally published on https://www.apriorit.com/ |
 
 ### DLL Injection - (Creating a Fake DLL)
 The method of hooking the API through the DLL, also called, "DLL Injection".  For example, we can create a fake DLL that has exactly the same export function as `kernel32.dll` and has exactly the same behavior, and make the .exe file recognize the DLL as if it were a real `kernel32.dll`.
