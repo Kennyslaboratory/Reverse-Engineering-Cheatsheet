@@ -35,11 +35,11 @@ API hooking is a technique by which we can instrument and modify the behavior an
 ### DLL Injection - (Creating a Fake DLL)
 The method of hooking the API through a DLL, also called, "DLL Injection".  For example, we can create a fake DLL that has exactly the same export function as `kernel32.dll` and has exactly the same behavior, and make the .exe file recognize the DLL as if it were a real `kernel32.dll`.
 
-**4 Steps of DDL Injection**
-  - Attach to the process
-  - Allocate Memory within the process
-  - Copy the DLL or the DLL Path into the processes memory and determine appropriate memory addresses
-  - Instruct the process to Execute your DLL
+**4 Steps of DLL Injection**
+  - **Attach** to the process
+  - **Allocate** Memory within the process
+  - **Copy the DLL** or the DLL Path into the processes memory and determine appropriate memory addresses
+  - **Instruct the process** to Execute your DLL
 
 
 ... *[to be continued]* ...
