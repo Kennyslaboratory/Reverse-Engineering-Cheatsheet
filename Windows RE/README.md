@@ -41,5 +41,24 @@ The method of hooking the API through a DLL, also called, "DLL Injection".  For 
   - **Copy the DLL** or the DLL Path into the processes memory and determine appropriate memory addresses
   - **Instruct the process** to Execute your DLL
 
+## Useful Windows API Functions - (DLL Injection)
+| Function | Description |
+| --- | --- |
+| LoadLibraryA() | Automatically load a library.  Easy to use but very easy to block and detect. |
+| GetProcAddress() | ... |
+| CreateToolhelp32Snapshot() | ... |
+| OpenProcess() | ... |
+
+## LoadLibraryA()
+`LoadLibraryA()` is a `kernel32.dll` function used to load DLLs, executables, and other supporting libraries at run time.  It's super easy and allows you to get your DLL injected without manual mapping.  The down side is that using this function is really easy to detect and stop because it registers the loaded DLL with the program.
+
+Programmers can detect a `LoadLibraryA()` by using the [CreateToolhelp32Snapshot()](https://docs.microsoft.com/en-us/windows/win32/api/tlhelp32/nf-tlhelp32-createtoolhelp32snapshot), [EnumProcessModules()](https://docs.microsoft.com/en-us/windows/win32/api/psapi/nf-psapi-enumprocessmodules), and [NtQueryVirtualMemory()](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntqueryvirtualmemory).
+
+The only parameter `LoadLibraryA()` needs however is the filename.  This means that we just need to allocate some memory for the path to our DLL and set our execution starting point to the address of LoadLibraryA(), providing the memory address where the path lies as a parameter.
+
+The major downside to LoadLibraryA() is that it registers the loaded DLL with the program and thus can be easily detected. Another slightly annoying caveat is that if a DLL has already been loaded once with LoadLibraryA(), it will not execute it. You can work around this issue but it's more code.
+
+## Jumping to DllMain - (Manual Mapping)
+An alternative method to LoadLibraryA() is load the entire DLL into memory, then determine the offset to the DLL's entry point. Using this method you can avoid registering the DLL with the program (stealthy) and repeatedly inject into a process.
 
 ... *[to be continued]* ...
