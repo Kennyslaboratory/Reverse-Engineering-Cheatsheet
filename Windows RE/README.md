@@ -1,9 +1,9 @@
 # Windows Reversing Tools
 | # | Toolkit | Description |
 | --- | --- | --- |
-| 1 | FlareVM | ... |
-| 2 | Windows Sysinternals | ... |
-
+| 1 | [FlareVM](https://github.com/fireeye/flare-vm) | Windows Reverse Engineering Suite. |
+| 2 | [Windows Sysinternals](https://docs.microsoft.com/en-us/sysinternals/) | Tools created by Microsoft for Debugging and Binary Analysis. |
+| 3 | [Immunity Debugger](https://www.immunityinc.com/products/debugger/) | Free and power debugger.  Used by the [Corelan Team](https://www.corelan.be/index.php/about-us/about-corelan-team/). |
 
 # Hex Translations Tools
 | Tool | Description |
@@ -12,9 +12,9 @@
 | [Unitconverters](https://www.unitconverters.net/numbers/base-10-to-base-8.htm) | Quick and Simple translations |
 
 # Windows Reverse Engineering
-Windows applications make calls to the Windows API in order function.  To my knowledge, all Windows APIs are called and processed internally, even if the application is using .NET or the C++ library, Microsoft Foundation Class Library (MFC).  The API is being used in some way, therefore, it is in our best interest to do `API Hooking`.  
+Windows applications make calls to the Windows API in order function.  To my knowledge, all Windows APIs are called and processed internally, even if the application is using .NET or the C++ library, Microsoft Foundation Class Library (MFC).  The API is being used in some way, therefore, it is in our best interest to do `API Hooking` in some cases. 
 
-These days, Microsoft is promoting the use of the .NET Framework for developing Windows applications. The .NET Framework uses the `System` class for accessing the Win32 API.
+By the way, these days Microsoft is promoting the use of the .NET Framework for developing Windows applications. The .NET Framework uses the `System` class for accessing the Win32 API and is higher-level than MFC / C++.
 
 If you’re going to be doing serious reversing of Windows applications, it is going to be important for you to understand the Win32 API because no matter which high-level interface an application employs (if any), it is eventually going to use the Win32 API for communicating with the OS
 
