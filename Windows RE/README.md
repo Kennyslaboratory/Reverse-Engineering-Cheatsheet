@@ -1,9 +1,15 @@
-# Resources Referenced
-| # | Resource |
+# Windows Reversing Tools
+| # | Toolkit | Description |
+| --- | --- | --- |
+| 1 | FlareVM | ... |
+| 2 | Windows Sysinternals | ... |
+
+
+# Hex Translations Tools
+| Tool | Description |
 | --- | --- |
-| 1 | [Apriorit](https://www.apriorit.com/dev-blog/160-apihooks) |
-| 2 | [Secrets_of_Reverse_Engineering](https://www.foo.be/cours/dess-20122013/b/Eldad_Eilam-Reversing__Secrets_of_Reverse_Engineering-Wiley(2005).pdf) |
-| 3 | [Open Security Blog](http://blog.opensecurityresearch.com/2013/01/windows-dll-injection-basics.html) |
+| [Online Hex Tools](https://onlinehextools.com/) | Useful online tools for translating memory, etc. |
+| [Unitconverters](https://www.unitconverters.net/numbers/base-10-to-base-8.htm) | Quick and Simple translations |
 
 # Windows Reverse Engineering
 Windows applications make calls to the Windows API in order function.  To my knowledge, all Windows APIs are called and processed internally, even if the application is using .NET or the C++ library, Microsoft Foundation Class Library (MFC).  The API is being used in some way, therefore, it is in our best interest to do `API Hooking`.  
@@ -60,3 +66,11 @@ The only parameter `LoadLibraryA()` needs however is the filename.  This means t
 An alternative method to `LoadLibraryA()` is load the entire DLL into memory, then determine the offset to the DLL's entry point. Using this method you can avoid registering the DLL with the program (stealthy) and repeatedly inject into a process.
 
 ... *[to be continued]* ...
+
+
+# Resources Referenced
+| # | Resource |
+| --- | --- |
+| 1 | [Apriorit](https://www.apriorit.com/dev-blog/160-apihooks) |
+| 2 | [Secrets_of_Reverse_Engineering](https://www.foo.be/cours/dess-20122013/b/Eldad_Eilam-Reversing__Secrets_of_Reverse_Engineering-Wiley(2005).pdf) |
+| 3 | [Open Security Blog](http://blog.opensecurityresearch.com/2013/01/windows-dll-injection-basics.html) |
