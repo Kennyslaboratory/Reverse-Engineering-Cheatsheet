@@ -12,7 +12,7 @@
 | [Unitconverters](https://www.unitconverters.net/numbers/base-10-to-base-8.htm) | Quick and Simple translations |
 
 # Windows Reverse Engineering
-Windows applications make calls to the Windows API in order function.  To my knowledge, all Windows APIs are called and processed internally, even if the application is using .NET or the C++ library, Microsoft Foundation Class Library (MFC).  The API is being used in some way, therefore, it is in our best interest to do `API Hooking` in some cases. 
+Windows applications make calls to the Windows API in order to function.  To my knowledge, all Windows APIs are called and processed internally, even if the application is using .NET or the C++ library, Microsoft Foundation Class Library (MFC).  The API is being used in some way, therefore, it is in our best interest to do `API Hooking` in some cases. 
 
 By the way, these days Microsoft is promoting the use of the .NET Framework for developing Windows applications. The .NET Framework uses the `System` class for accessing the Win32 API and is higher-level than MFC / C++.
 
