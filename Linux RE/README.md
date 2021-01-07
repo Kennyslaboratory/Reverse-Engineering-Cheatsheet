@@ -10,6 +10,9 @@ A full refresher for people who are stuck reversing applications off and on.  I 
 | 4 | `strace ./[file]` | Trace system calls and signals |
 
 ----------------------------
+## Online Base Translators
+
+----------------------------
 
 ## Linux Debuggers
 | Name | Description |
@@ -28,6 +31,17 @@ A full refresher for people who are stuck reversing applications off and on.  I 
 | Disable Canaries | `gcc -g overflow.c -o overflow -fno-stack-protector` | Disable stack canaries when compiling. |
 | Disable ASLR | `sudo bash -c 'echo 0 > /proc/sys/kernel/randomize_va_space'` | Disables the system's ASLR protections. |
 
-## GDB Commands [to-do]
+## GDB Commands
 
-... ... ...
+**Essential Commands**
+| Command | Description |
+| --- | --- |
+| run, `r` | Execute the program |
+| break, `b` | Set a breakpoint |
+| continue, `c` | Continue execution. |
+| next, `n` | Runs the program until next line, then pauses. |
+| step, `s` | Step to next instruction |
+| info register, `i r` | Returns register information.  Example, `i r eip` |
+| examine, `x` | Examine memory. Example, `x/8xh` |
+
+
