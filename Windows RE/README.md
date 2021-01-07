@@ -45,20 +45,18 @@ The method of hooking the API through a DLL, also called, "DLL Injection".  For 
 | Function | Description |
 | --- | --- |
 | LoadLibraryA() | Automatically load a library.  Easy to use but very easy to block and detect. |
-| GetProcAddress() | ... |
-| CreateToolhelp32Snapshot() | ... |
-| OpenProcess() | ... |
+| GetProcAddress() | Retrieves the address of an exported function or variable from the specified dynamic-link library (DLL). |
+| CreateToolhelp32Snapshot() | Takes a snapshot of the specified processes, as well as the heaps, modules, and threads used by these processes. |
+| OpenProcess() | Opens an existing local process object. |
 
 ## LoadLibraryA()
 `LoadLibraryA()` is a `kernel32.dll` function used to load DLLs, executables, and other supporting libraries at run time.  It's super easy and allows you to get your DLL injected without manual mapping.  The down side is that using this function is really easy to detect and stop because it registers the loaded DLL with the program.
 
-Programmers can detect a `LoadLibraryA()` by using the [CreateToolhelp32Snapshot()](https://docs.microsoft.com/en-us/windows/win32/api/tlhelp32/nf-tlhelp32-createtoolhelp32snapshot), [EnumProcessModules()](https://docs.microsoft.com/en-us/windows/win32/api/psapi/nf-psapi-enumprocessmodules), and [NtQueryVirtualMemory()](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntqueryvirtualmemory).
+Programmers can detect a `LoadLibraryA()` by using the [CreateToolhelp32Snapshot()](https://docs.microsoft.com/en-us/windows/win32/api/tlhelp32/nf-tlhelp32-createtoolhelp32snapshot), [EnumProcessModules()](https://docs.microsoft.com/en-us/windows/win32/api/psapi/nf-psapi-enumprocessmodules), and [NtQueryVirtualMemory()](https://docs.microsoft.com/en-us/windows-hardware/drivers/ddi/ntifs/nf-ntifs-ntqueryvirtualmemory) functions.
 
-The only parameter `LoadLibraryA()` needs however is the filename.  This means that we just need to allocate some memory for the path to our DLL and set our execution starting point to the address of LoadLibraryA(), providing the memory address where the path lies as a parameter.
-
-The major downside to LoadLibraryA() is that it registers the loaded DLL with the program and thus can be easily detected. Another slightly annoying caveat is that if a DLL has already been loaded once with LoadLibraryA(), it will not execute it. You can work around this issue but it's more code.
+The only parameter `LoadLibraryA()` needs however is the filename.  This means that we just need to allocate some memory for the path to our DLL and set our execution starting point to the address of LoadLibraryA(), providing the memory address where the path lies as a parameter. However, a slightly annoying caveat with `LoadLivraryA()` is that if a DLL has already been loaded once with it, it will not execute it. You can work around this issue but it will require more code.
 
 ## Jumping to DllMain - (Manual Mapping)
-An alternative method to LoadLibraryA() is load the entire DLL into memory, then determine the offset to the DLL's entry point. Using this method you can avoid registering the DLL with the program (stealthy) and repeatedly inject into a process.
+An alternative method to `LoadLibraryA()` is load the entire DLL into memory, then determine the offset to the DLL's entry point. Using this method you can avoid registering the DLL with the program (stealthy) and repeatedly inject into a process.
 
 ... *[to be continued]* ...
