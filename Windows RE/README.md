@@ -27,7 +27,7 @@ API hooking is a technique by which we can instrument and modify the behavior an
 | Type | Description |
 | --- | --- |
 | Local Hooks | These influence only specific applications. |
-| Global hooks | These affect all system processes.It was originally published on https://www.apriorit.com/ |
+| Global hooks | These affect all system processes. |
 
 ### DLL Injection - (Creating a Fake DLL)
 The method of hooking the API through the DLL, also called, "DLL Injection".  For example, we can create a fake DLL that has exactly the same export function as `kernel32.dll` and has exactly the same behavior, and make the .exe file recognize the DLL as if it were a real `kernel32.dll`.
